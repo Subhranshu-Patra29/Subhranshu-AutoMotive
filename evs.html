@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subhranshu AutoMotive - EVs</title>
+  <link rel="icon" href="favicon-32x32.png">
+  <link rel="stylesheet" href="bikesStyle.css">
+</head>
+<body style="background-image: url('evbg2.jpg'); background-size: contain;">
+
+    <div class="navbar">
+        <div class="left-links">
+          <div class="dropdown">
+            <button class="dropbtn">Popular EV Brands</button>
+            <div class="dropdown-content">
+              <a href="#ola">Ola</a>
+              <a href="#ather">Ather</a>
+              <a href="#tata">Tata Motors</a>
+              <a href="#mg">Morris Garages</a>
+            </div>
+          </div>
+    
+          <div class="dropdown">
+            <button class="dropbtn">Bike Categories</button>
+            <div class="dropdown-content">
+              <a href="#">Electric Scooters</a>
+              <a href="#">Electric Cars</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="logo">
+            <img src="car3.jpeg" alt="Bikes Logo">
+          </div>
+        </div>
+
+  <div class="content">
+
+    <div class="bike-brand-section" id="ola">
+        <h2 style=" color: #fff;">Ola</h2>
+        <div class="bike-container">
+        <span class="bikespan"><div class="bike" onclick="showSpecifications('Bike Model 1', 'Specifications for Bike Model 1')">
+            <img src="ev1.webp" alt="Bike 1">
+            <p class="bikeName">Ola S1 Pro</p>
+          </div></span>
+      </div>
+  
+    <div class="bike-brand-section" id="ather">
+        <h2 style=" color: #fff;">Ather</h2>
+        <div class="bike-container">
+        <span class="bikespan"><div class="bike">
+            <img src="ev2.webp" alt="Bike 1">
+            <p class="bikeName">Ather 450X</p>
+          </div></span>
+        </div>
+      </div>
+
+    <div class="bike-brand-section" id="tata">
+        <h2 style=" color: #fff;">Tata Motors</h2>
+        <div class="bike-container">
+        <span class="bikespan"><div class="bike">
+            <img src="tata1.webp" alt="Bike 1">
+            <p class="bikeName">Tata Punch EV</p>
+          </div></span>
+  
+          <span class="bikespan"><div class="bike">
+            <img src="tata2.jpeg" alt="Bike 2">
+            <p class="bikeName">Tata Nexon EV</p>
+          </div></span>
+      </div>
+
+    <div class="bike-brand-section" id="mg">
+        <h2 style=" color: #fff;">Morris Garages</h2>
+        <div class="bike-container">
+        <span class="bikespan"><div class="bike">
+            <img src="mg1.webp" alt="Bike 1">
+            <p class="bikeName">MG ZS EV</p>
+          </div></span>
+  
+          <span class="bikespan"><div class="bike">
+            <img src="mg2.jpeg" alt="Bike 2">
+            <p class="bikeName">MG Comet EV</p>
+          </div></span>
+          
+      </div>
+
+       <!-- Modal for displaying specifications -->
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="bikeModel"></h2>
+      <p id="bikeSpecifications"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

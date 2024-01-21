@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="icon" href="favicon-32x32.png">
+  <title>Subhranshu AutoMotive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="left-links">
+      <a href="#">Home</a>
+      <a href="bikes.html">Bikes</a>
+      <a href="cars.html">Cars</a>
+      <a href="evs.html">EVs</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="right-links">
+      <a href="#" onclick="showLogin()">Log In</a>
+    </div>
+    <div class="logo">
+      <img src="car3.jpeg" alt="Logo">
+    </div>
+  </div>
+
+  <div class="tagline-container">
+    <h1 class="tagline">Explore the World of <span class="tagline-inside">Automobiles</span></h1>
+  </div>
+
+  <!-- Image Links -->
+  <div class="image-links">
+    <span class="links"><a href="bikes.html" class="image-link">
+        <img src="b1.webp" alt="Bikes">
+        <p>Bikes</p>
+      </a></span>
+
+    <span class="links"><a href="cars.html" class="image-link">
+        <img src="cc1.webp" alt="Cars">
+        <p>Cars</p>
+      </a></span>
+
+    <span class="links"><a href="evs.html" class="image-link">
+        <img src="ev1.webp" alt="EVs">
+        <p>EVs</p>
+      </a></span>
+  </div>
+
+  <div id="about" class="about">
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide"><img src="c1.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="c2.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="c3.jpg" alt="Slide 3"></div>
+        <div class="slide"><img src="c5.jpg" alt="Slide 5"></div>
+      </div>
+      <div class="arrow prev" onclick="prevSlide()">&#9665;</div>
+      <div class="arrow next" onclick="nextSlide()">&#9655;</div>
+    </div>
+
+    <div class="about-description">
+      <h2 style="font-size: 50px;">About Us</h2>
+      <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: larger; color: aliceblue;">
+        Welcome to our premier automobile destination, where passion for vehicles meets a world of exploration and
+        innovation! Dive into the exhilarating realm of automobiles, where cutting-edge technology and timeless design
+        converge to redefine the way we experience the open road.
+      </p>
+    </div>
+  </div>
+
+  <section id="contact" class="contact-section">
+    <div class="leftCont">
+      <ul style="list-style-type: none;">
+        <li>
+          <p><ion-icon name="call-sharp" style="margin-right: 3px;"></ion-icon>8249945966</p>
+        </li>
+        <li>
+          <p></p><ion-icon name="logo-whatsapp" style="margin-right: 3px;"></ion-icon>8249728541
+          </p>
+        </li>
+        <li>
+          <p><ion-icon name="mail-outline" style="margin-right: 3px;"></ion-icon>subhakrpatra@gmail.com</p>
+        </li>
+        <li>
+          <p><ion-icon name="mail-outline" style="margin-right: 3px;"></ion-icon>patrasubhranshu3@gmail.com
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="rightCont">
+      <ul style=" list-style-type: none;">
+        <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="https://instagram.com/bong_s29patra?igshid=YTQwZjQ0NmI0OA==" target="_blank"><ion-icon
+              name="logo-instagram"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a
+            href="https://www.linkedin.com/in/subhranshu-patra-8207a31b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Login Popup -->
+  <div id="loginPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2 style="font-size: 2em;">Sign in</h2>
+      <form action="#" method="post">
+        <label for="username">Username/Email</label>
+        <br>
+        <input type="text" id="username" name="username" placeholder="Subhranshu_Patra-29" required>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" id="password" name="password" placeholder="********" required>
+        <br>
+        <button type="submit" value="Login" class="login">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" onclick="showSignup()">Sign Up</a></p>
+    </div>
+  </div>
+
+  <!-- Signup Popup -->
+  <div id="signupPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Sign Up</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label> <br>
+        <input type="text" id="name" name="name" placeholder="Subhranhshu Patra" required>
+        <br>
+        <label for="email">Email:</label> <br>
+        <input type="email" id="email" name="email" placeholder="bongspatra@gmail.com" required>
+        <br>
+        <label for="phone">Phone No:</label>
+        <input type="tel" id="phone" name="phone" placeholder="824972XXXXX" required>
+        <br>
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" name="password" placeholder="********" required>
+        <br>
+        <button type="submit" value="Sign Up" class="login">Sign Up</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subhranshu AutoMotive - Cars</title>
+  <link rel="icon" href="favicon-32x32.png">
+  <link rel="stylesheet" href="bikesStyle.css">
+</head>
+<body style="background-image: url('carbg.jpg'); background-size: auto;">
+    
+    <div class="navbar">
+        <div class="left-links">
+          <div class="dropdown">
+            <button class="dropbtn">Popular Car Brands</button>
+            <div class="dropdown-content">
+              <a href="#rolls">Rolls - Royce</a>
+              <a href="#merc">Mercedes Benz</a>
+              <a href="#bmw">B.M.W.</a>
+              <a href="#lexus">Lexus</a>
+              <a href="#mcl">Porsche</a>
+            </div>
+          </div>
+    
+          <div class="dropdown">
+            <button class="dropbtn">Bike Categories</button>
+            <div class="dropdown-content">
+              <a href="#">Sedan</a>
+              <a href="#">SUV</a>
+              <a href="#">Supercar</a>
+              <a href="#">Convertible</a>
+              <a href="#">Limousine</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="logo">
+            <img src="car3.jpeg" alt="Bikes Logo">
+          </div>
+        </div>
+
+  <div class="content">
+
+    <div class="bike-brand-section" id="rolls">
+        <h2>Rolls - Royce</h2>
+        <div class="bike-container">
+
+        <span class="bikespan"><div class="bike" onclick="showSpecifications('Bike Model 1', 'Specifications for Bike Model 1')">
+            <img src="rolls1.webp" alt="Car 1">
+            <p class="bikeName">Rolls Royce Spectre</p>
+          </div></span>
+
+          <span class="bikespan"><div class="bike">
+            <img src="rolls2.jpg" alt="Car 2">
+            <p class="bikeName">Rolls Royce Phantom</p>
+          </div></span>
+          
+          <span class="bikespan"><div class="bike">
+            <img src="rolls3.jpg" alt="Car 3" >
+            <p class="bikeName">Rolls Royce Dawn Convertible 2016</p>
+          </div></span>
+        </div>
+      </div>
+  
+    <div class="bike-brand-section" id="merc">
+        <h2>Mercedes Benz</h2>
+        <div class="bike-container">
+
+        <span class="bikespan"><div class="bike">
+            <img src="merc1.webp" alt="Car 1">
+            <p class="bikeName">Mercedes Benz Maybach GLS</p>
+          </div></span>
+  
+          <span class="bikespan"><div class="bike">
+            <img src="merc2.webp" alt="Car 2">
+            <p class="bikeName">Mercedes Benz C-Class</p>
+          </div></span>
+          
+          <span class="bikespan"><div class="bike">
+            <img src="merc3.webp" alt="Car 3">
+            <p class="bikeName">Mercedes Benz GLC</p>
+          </div></span>
+        </div>
+      </div>
+
+    <div class="bike-brand-section" id="bmw">
+        <h2>B.M.W.</h2>
+        <div class="bike-container">
+
+        <span class="bikespan"><div class="bike">
+            <img src="bmwc1.webp" alt="Car 1">
+            <p class="bikeName">BMW XM</p>
+          </div></span>
+  
+          <span class="bikespan"><div class="bike">
+            <img src="bmwc2.webp" alt="Car 2">
+            <p class="bikeName">BMW 7 Series</p>
+          </div></span>
+          
+          <span class="bikespan"><div class="bike">
+            <img src="bmwc3.webp" alt="Car 3">
+            <p class="bikeName">BMW Z4 Convertible</p>
+          </div></span>
+        </div>
+      </div>
+
+    <div class="bike-brand-section" id="lexus">
+        <h2>Lexus</h2>
+        <div class="bike-container">
+
+        <span class="bikespan"><div class="bike">
+            <img src="l1.jpg" alt="Car 1">
+            <p class="bikeName">Lexus LC 500h</p>
+          </div></span>
+  
+          <span class="bikespan"><div class="bike">
+            <img src="l2.jpeg" alt="Car 2">
+            <p class="bikeName">Lexus LX</p>
+          </div></span>
+          
+          <span class="bikespan"><div class="bike">
+            <img src="l3.webp" alt="Car 3">
+            <p class="bikeName">Lexus ES</p>
+          </div></span>
+        </div>
+      </div>
+
+    <div class="bike-brand-section" id="mcl">
+        <h2>Porsche</h2>
+        <div class="bike-container">
+
+        <span class="bikespan"><div class="bike">
+            <img src="mc1.webp" alt="Car 1">
+            <p class="bikeName">Porsche 911</p>
+          </div></span>
+  
+          <span class="bikespan"><div class="bike">
+            <img src="mc2.webp" alt="Car 2">
+            <p class="bikeName">Porsche 718</p>
+          </div></span>
+          
+          <span class="bikespan"><div class="bike">
+            <img src="mc3.webp" alt="Car3">
+            <p class="bikeName">Porsche Panamera</p>
+          </div></span>
+        </div>
+      </div>
+
+       <!-- Modal for displaying specifications -->
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="bikeModel"></h2>
+      <p id="bikeSpecifications"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

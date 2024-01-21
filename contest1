@@ -1,0 +1,54 @@
+
+    public int minimumPushes(String word) 
+    {
+        HashMap <Character,Integer> map = new HashMap<>();
+        int count = 1;
+        for(int i = 97; i < 126; i++) 
+        {
+            if((char)i == 's' || (char)i == 'z')
+            {
+                map.put((char)i, 4);
+                continue;
+            }
+            map.put((char)i, count);
+            count++;
+            if(count == 4)
+                count = 1;
+        }
+        // System.out.println(map);
+        count = 0;
+        for(char i : word.toCharArray())
+        {
+            count += map.get(i);
+        }
+        return count;
+    }
+
+    public int minimumPushes(String word) 
+    {
+       int l = word.length();
+        if(l <= 8)
+            return l;
+        else if(l > 8 && l <= 16)
+            return (8 + (l-8)*2);
+        else if(l > 16 && l <= 24)
+            return (8 + 16 + (l-16)*3);
+        else
+            return (8 + 16 + 24 + (l-24)*4);
+    }
+
+
+question 2 - python
+
+        result = [0] * n
+        for house1 in range(1, n + 1):
+            for house2 in range(1, n + 1):
+                if house1 != house2:
+                    distance = min(
+                        abs(house2 - house1),
+                        abs(x - house1) + 1 + abs(y - house2),
+                        abs(y - house1) + 1 + abs(x - house2)
+                    )
+                    result[distance] += 1
+        result.append(0)
+        return result[1:]
